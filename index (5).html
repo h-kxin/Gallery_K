@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Visions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #f7f7f7, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #cccccc;
+        }
+        nav {
+            background-color: #111111;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            color: #000000;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #000000;
+            background-color: transparent;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .section h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #000000;
+            margin-top: 5px;
+        }
+        .section p, .section ul {
+            font-size: 1rem;
+            color: #555;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .gallery figcaption {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+        .gallery figcaption a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+            transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery figcaption a:hover {
+            color: #000;
+            border-bottom: 1px solid #000;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li a {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+            padding-bottom: 2px;
+            transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s, box-shadow 0.3s;
+        }
+        ul li a:hover {
+            color: #000;
+            border-bottom: 1px solid #000;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333333;
+        }
+        footer p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artistic Visions</h1>
+        <p>Explore, Learn, and Interact with Visual Arts</p>
+    </header>
+
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#artists">Artists</a>
+        <a href="#education">Education</a>
+        <a href="#community">Community</a>
+        <a href="#store">Store</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <figure>
+                <a href="andy-warhol/index.html">
+                    <img src="https://i0.wp.com/blog.artsper.com/wp-content/uploads/2019/07/warhol.jpg?w=644&ssl=1" alt="Artwork 1">
+                    <figcaption><a href="andy-warhol/index.html">Andy Warhol, <em>Campbell’s Soup Cans</em>, 1962</a></figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="antony-gormley/index.html">
+                    <img src="https://i0.wp.com/blog.artsper.com/wp-content/uploads/2019/07/gormley.png?w=644&ssl=1" alt="Artwork 2">
+                    <figcaption><a href="antony-gormley/index.html">Antony Gormley, <em>Angel of the North</em>, 1998</a></figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="takashi-murakami/index.html">
+                    <img src="https://i0.wp.com/blog.artsper.com/wp-content/uploads/2019/07/murakami.jpg?w=644&ssl=1" alt="Artwork 3">
+                    <figcaption><a href="takashi-murakami/index.html">Takashi Murakami, <em>Flower Ball</em>, 2002</a></figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="njideka-crosby/index.html">
+                    <img src="https://i0.wp.com/blog.artsper.com/wp-content/uploads/2019/07/crosby.jpg?w=644&ssl=1" alt="Artwork 4">
+                    <figcaption><a href="njideka-crosby/index.html">Njideka Akunyili Crosby, <em>I Still Face You</em>, 2015</a></figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+
+    <section id="artists" class="section">
+        <h2>Artists</h2>
+        <p>Learn about the talented artists behind the masterpieces.</p>
+        <ul>
+            <li><a href="andy-warhol.html">Andy Warhol</a>: <em>Campbell’s Soup Cans</em>, 1962 - Symbolic of the Pop Art movement.</li>
+            <li><a href="antony-gormley.html">Antony Gormley</a>: <em>Angel of the North</em>, 1998 - Known for anthropomorphic statues.</li>
+            <li><a href="takashi-murakami.html">Takashi Murakami</a>: Known for blending traditional Nihonga with modern anime styles.</li>
+            <li><a href="njideka-akunyili-crosby.html">Njideka Akunyili Crosby</a>: Vibrant pieces reflecting her dual cultural experience.</li>
+        </ul>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p>Explore tutorials and learn new artistic skills.</p>
+        <ul>
+            <li><a href="tutorial1.html">Basic Drawing Techniques</a></li>
+            <li><a href="tutorial2.html">Introduction to Digital Art</a></li>
+            <li><a href="tutorial3.html">Understanding Color Theory</a></li>
+        </ul>
+    </section>
+
+    <section id="community" class="section">
+        <h2>Community</h2>
+        <p>Join our community to share your art and connect with others.</p>
+        <ul>
+            <li><a href="submission.html">Submit Your Artwork</a></li>
+            <li><a href="challenges.html">Participate in Challenges</a></li>
+            <li><a href="discussions.html">Join Discussions</a></li>
+        </ul>
+    </section>
+
+    <section id="store" class="section">
+        <h2>Store</h2>
+        <p>Purchase original artworks and art-inspired products.</p>
+        <ul>
+            <li><a href="prints.html">Buy Prints</a></li>
+            <li><a href="commission.html">Commission Art</a></li>
+            <li><a href="merchandise.html">Explore Merchandise</a></li>
+        </ul>
+    </section>
+
+    <footer id="footer">
+         <p>&copy; 2025 Kexin Hu's online collection of Artistic Visions. 
+        <br>All rights reserved.</p>
+    </footer>
+</body>
+</html>
